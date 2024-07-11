@@ -55,9 +55,9 @@
         "live-image" = mkSystem [
           # Note that if one of the following modules need to input parameters like 'terminal' and 'shell', these are taken in the code above
           ./nixos/installation/iso.nix
-          ./nixos/home-manager/desktops/mate
+          ./nixos/home-manager/desktops/gnome
           ./nixos/home-manager/terminals/alacritty
-          ./nixos/modules/themes/graphite
+          ./nixos/modules/themes/samurai
           ./nixos/hosts
           home-manager.nixosModules.home-manager
         ];
