@@ -12,10 +12,10 @@
   outputs = {self, nixpkgs, home-manager}@inputs:
     let
       version = "unstable"; # unstable or 23.11
-      theme = "graphite";
-      desktop = "mate";
-      dmanager = "lightdm";
-      shell = "bash";
+      theme = "samurai";
+      desktop = "gnome";
+      dmanager = "gdm";
+      shell = "fish";
       terminal = "alacritty";
       browser = "firefox";
       bootloader = "systemd";
@@ -23,7 +23,7 @@
       nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = {
-          username = "athena";
+          username = "ta0t1e";
           hostname = "athenaos";
           hashed = "$6$zjvJDfGSC93t8SIW$AHhNB.vDDPMoiZEG3Mv6UYvgUY6eya2UY5E2XA1lF7mOg6nHXUaaBmJYAMMQhvQcA54HJSLdkJ/zdy8UKX3xL1";
           hashedRoot = "$6$zjvJDfGSC93t8SIW$AHhNB.vDDPMoiZEG3Mv6UYvgUY6eya2UY5E2XA1lF7mOg6nHXUaaBmJYAMMQhvQcA54HJSLdkJ/zdy8UKX3xL1";
